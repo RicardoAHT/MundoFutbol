@@ -20,8 +20,10 @@ const HomeForm = () => {
   return (
 
     <form className='HomeForm' onSubmit={handleUser}>
-        <input className='HomeForm__input' type="text" ref={inputUser}/>
-        <button className='HomeForm__button'>Go!</button>
+        <input className='HomeForm__input' placeholder='Ingresa tu nombre' type="text" ref={inputUser}/>
+        <button className='HomeForm__button' >
+          Go!
+        </button>
     </form>
   )
 }
