@@ -1,0 +1,53 @@
+1. Crear la aplicacion npm create vite@latest nombre-proyecto
+2. Instalar axios
+3. Instalar redux
+4. Instalar Router Dom
+
+        ROUTER DOM
+
+5. Abrimos main jsx y lo envolvemos en <HashRouter> para empezar a crear las rutas
+gracias a la libreria de Router Dom.
+6. Abrimos App.jsx y creamos <Routes> dentro de app para ir creando dentro las rutas.
+7. Creamos rutas dentro de <Routes> con <Route/>
+8. Definimos la ruta en en Route asi: <Route path="/" element={<componente/>} />
+9. Creamos la carpeta pages dentro de src
+10. Creamos los componentes de pages. la primera se puede llamar HomePage.jsx
+11. Se renderiza el componente HomePage en element del paso 8 y asi con las demas rutas y pages.
+
+La HomePage creo un formulario para posterior guardar esos datos con redux
+
+
+        REDUX
+
+12. En main.jsx envuelvo la app en el <Provider> = el provider me va a permitir acceder a estado globales en cualquier parte de la app
+13. Se crea la carpeta store dentro de src
+14. Creo un archivo index.js dentro de la carpeta store, en este archivo voy a crear la store. (configureStore)
+15. export default configureStore({reducer:{}})
+16. Se le pasa la store al provider que envuelve la app.
+17. Creamos la carpeta slices dentro de la carpeta store.
+18. En la carpeta slices creamos cada uno de los archivos.slice.js estos slice van a almacenar cada uno de los estados globales. snippet(slice)
+19. Exporto mi slice para importarlo en mi store y colocarlo dentro de mis reducers, asi queda guardado como un estado global.
+    nota: las actions hay que despacharlas con useDispatch()
+    nota: const "mireducer" = useSelector(store => {store."mireducer"}) me permite acceder a lo que tengo en mi store
+
+    useRef
+
+20. Utilizo useRef para capturar la informacion de un formulario puede ser de HomePage o la pagina correspondiente.
+21. Creo una funcion donde reciba el evento onSubmit y despache la action con el valor capturado por useRef() de la ref del input
+    
+
+22. Creo la carpeta hooks en src
+23. Creamos el hook personalizado useFetch,js
+
+24. Defino const navigate = useNavigate()
+25. En la funcion q usa el evento submit uso navigate("/laruta") para que la pagina abra la ruta que deseamos acceder
+
+26. Guardo la url base de la API en una variable
+27. Guardo y desestructuro useFetch en mi componente pasando la url como parametro
+
+28. Utilizo un useEffect y dentro ejecuto el get del useFetch que desestructure
+29. Realizo un map del lo que obtengo de la API asegurandome que sea un Array, pasando la info y la key como props y realizando un encadenamiento opcional porque viene de una funcion asincronica
+30. Creo un nuevo componente donde voy a renderizar lo que realice en el map
+31. Recibo las props en el componente nuevo (La info que recibo son url con las que puedo hacer peticiones asincronicas)
+
+32. con useParams puedo capturar el id de la ruta actual
