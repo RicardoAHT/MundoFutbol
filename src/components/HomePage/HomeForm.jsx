@@ -12,18 +12,18 @@ const HomeForm = () => {
     
 
     const handleUser = (event) =>{
-        event.preventDefault()
-        dispatch(setUserSlice(inputUser.current.value.trim()))
-        navigate("/standings")
+      event.preventDefault()
+      dispatch(setUserSlice(inputUser.current.value.trim()))
+      navigate("/standings")
     }
 
   return (
 
     <form className='HomeForm' onSubmit={handleUser}>
-        <input className='HomeForm__input' placeholder='Ingresa tu nombre' type="text" ref={inputUser}/>
-        <button className='HomeForm__button' >
-          Go!
-        </button>
+      <input className='HomeForm__input' placeholder='Ingresa tu nombre' type="text" ref={inputUser}/>
+      <button className='HomeForm__button' >
+        Go!
+      </button>
     </form>
   )
 }
