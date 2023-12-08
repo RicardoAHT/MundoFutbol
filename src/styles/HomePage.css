@@ -1,0 +1,55 @@
+/*! HomePage */
+.HomePage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url("/images/Futbol-min.jpg") ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: black;
+}
+.HomePage_div{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.HomePage_div_h1{
+    color: ghostwhite;
+    font-size: 100px;
+    text-shadow: 0px 5px 5px black;
+}
+/*! HomeForm */
+.HomeForm{
+    
+}
+.HomeForm__input{
+    /*background-color: rgba(248, 248, 255, 0.764);*/
+    border: none;
+    padding: 0.2rem;
+    color: black;
+}
+.HomeForm__button{
+    border: none;
+    padding: 0.2rem;
+    background-color: rgb(6, 6, 126);
+    font-weight: bold;
+    color: ghostwhite;
+}
+@media (max-width:640px){
+    /*! HomePage */
+    .HomePage_div{
+        gap: 1rem;
+    }
+    .HomePage_div_h1{
+        font-size: 70px;
+        margin-left: 1rem;
+    }
+    /*! HomeForm */
+    .HomeForm__input{
+        margin-left: 1rem;
+    }
+}
+@media (min-width:1000px){
+
+}

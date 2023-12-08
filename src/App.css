@@ -1,46 +1,10 @@
+
 body{
     /*background-color: black;*/
     /*color: ghostwhite;*/
 
 }
-/*! HomePage */
-.HomePage{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-image: url("/images/Futbol-min.jpg") ;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-color: black;
-}
-.HomePage_div{
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-}
-.HomePage_div_h1{
-    color: ghostwhite;
-    font-size: 100px;
-    text-shadow: 0px 5px 5px black;
-}
-/*! HomeForm */
-.HomeForm{
-    
-}
-.HomeForm__input{
-    /*background-color: rgba(248, 248, 255, 0.764);*/
-    border: none;
-    padding: 0.2rem;
-    color: black;
-}
-.HomeForm__button{
-    border: none;
-    padding: 0.2rem;
-    background-color: rgb(6, 6, 126);
-    font-weight: bold;
-    color: ghostwhite;
-}
+
 /*! NavBar */
 .navBar{
     background: linear-gradient(to bottom, #2e03bb, #020257);
@@ -141,7 +105,6 @@ body{
     text-align: center;
     margin-bottom: 2rem;
 }
-
 /*! StandingForm */
 .standingForm{
     
@@ -155,7 +118,6 @@ body{
 .standingForm__button{
     
 }
-
 /*? standingCardContainer*/
 .stadingsCard__container{
     display: flex;
