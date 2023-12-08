@@ -20,7 +20,7 @@ const CountrySelect = () => { //! Seleccionar el pais para obtener el countryId
     
   return (
     <form>
-        <label >Selecciona un pais</label>
+        <label >Selecciona un pais: </label>
         <select onChange={handleCountry}>
           <option>---</option>
           {

@@ -17,8 +17,8 @@ const Teams = () => {
   }, [leagueId])
 
   return (
-    <section>
-      <article>
+    <section className='team'>
+      <article className='team__article'>
         {
           teams?.map(team => (
             <TeamCard

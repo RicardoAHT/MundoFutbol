@@ -43,8 +43,8 @@ body{
 }
 /*! NavBar */
 .navBar{
-   background-color: blue;
-   padding: 1rem 0.5rem;
+    background: linear-gradient(to bottom, #2e03bb, #020257);
+    padding: 1rem 0.5rem;
 }
 .navBar__ul{
 
@@ -57,29 +57,35 @@ body{
     color: ghostwhite;
     text-decoration: none;
 }
-/*! StandingPage */
-.standingPage{
-
-}
-.standingPage__filter{
+/*? Menu de filtros*/
+.standingPage__filter,
+.teamPage__filter{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    background-color: grey;
+    color: ghostwhite;
+    background: linear-gradient(to right, #2e03bb, #020257);
     padding: 1rem 0.3rem;
 }
-/*! StandingForm */
-.standingForm{
-    
+/*! Header*/
+.header{
+    background-color: black;
+    display: flex;
+    justify-content: center;
 }
-.standingForm__label{
-    
+.header__div{
+    display: flex;
+    align-items: center;
+    background-image: url("/images/mundoFutbol3.webp");
+    background-size: cover;
+    height: 35vh;
+    width: 900px;
 }
-.standingForm__input{
-    width: 3rem;
-}
-.standingForm__button{
-
+.header__h1{
+    color: ghostwhite;
+    margin-left: 3rem;
+    font-size: 70px;
+    text-shadow: 5px 5px 10px black;
 }
 /*! Competition */
 .competition{
@@ -119,45 +125,87 @@ body{
     width: 30px;
     height: 30px;
 }
+/*! StandingPage */
+.standingPage{
+    
+}
+/*! Standing */
+.standing{
+
+}
+.standing__h2{
+    text-align: center;
+    margin-top: 3rem ;
+}
+.standing__h3{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/*! StandingForm */
+.standingForm{
+    
+}
+.standingForm__label{
+    
+}
+.standingForm__input{
+    width: 3rem;
+}
+.standingForm__button{
+    
+}
+
 /*? standingCardContainer*/
 .stadingsCard__container{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
 /*! StandingsCard*/
 .standingsCard{
     background: linear-gradient(45deg, rgba(2, 2, 155, 0.992), rgba(144, 0, 255, 0.986));
     border-radius: 0.3rem;
     border: solid 0.15rem;
     display: flex;
-    flex-direction: column;
+    flex-direction: row ;
     align-items: center;
-    max-width: 700px;
-    gap: 0.5rem;
-    padding: 0.5rem;
-    margin: 0.7rem 0.5rem;
+    justify-content: space-between;
+    width: 500px;
+    gap: 0.1rem;
+    padding: 0.2rem;
+    margin: 0.3rem 0.5rem;
 }
 .standingsCard__div{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 0.7rem;
+    gap: 0.2rem;
     margin: 1rem 0.5rem 0.2rem 0.5rem;
 }
 .standingsCard__div__badge{
     width: 35px;
 }
+.standingsCard__div__h4{
+    font-size: 15px;
+    color: ghostwhite;
+}
+.standingsCard__div2{
+
+}
+.standingsCard__div2__h5{
+    font-size: 14px;
+}
 .standingsCard__stats{
     background-color: rgba(248, 248, 255, 0.81);
     display: flex;
     border: solid 0.01rem;
+    font-size: 15px;
 }
 .standingsCard__stats__li{
     min-width: 35px;
     border: solid 0.01rem;
-    padding: 0.15rem;
+    padding: 0.1rem;
     text-align: center;
     list-style: none;
     display: flex;
@@ -178,15 +226,29 @@ body{
     background-color: grey;
     padding: 1rem 0.3rem;
 }
+/*! Team*/
+.team{
+
+}
+.team__article{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: start;
+}
 /*! TeamCard*/
 .teamCard{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 700px;
+    background: radial-gradient(circle at 30% 30%, #5542d6ab, #151543de);
     border: solid 0.2rem;
     margin: 1rem;
     padding: 1rem;
+    overflow-y: hidden;
 }
 .teamCard__div{
     display: flex;

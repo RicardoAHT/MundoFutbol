@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    background: radial-gradient(circle at 30% 30%, #ffffff, #1c1c49);
+}
 button{
     cursor: pointer;
 }

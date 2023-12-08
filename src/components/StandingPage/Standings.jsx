@@ -18,8 +18,8 @@ const Standings = () => {//! Renderiza la pagina cuando se cambie el valor del l
     //console.log(standings)
 
   return (
-    <div>
-        <h2>Standings</h2>
+    <section className='standing'>
+        <h2 className='standing__h2'>Clasificacion</h2>
         {
           hasError 
           ? (<h2>Hay un problema con ese codigo</h2>)
@@ -29,8 +29,9 @@ const Standings = () => {//! Renderiza la pagina cuando se cambie el valor del l
             ?
               (
                 <>
-                <h3>{standings?.[0]?.country_name}</h3>
-                <h3>{standings?.[0]?.league_name}</h3>
+                <h3 className='standing__h3'>
+                  {standings?.[0]?.country_name}: {standings?.[0]?.league_name} 
+                </h3>
                 <div className='stadingsCard__container'>
                 {
                   standings?.map(standing => (
@@ -51,7 +52,7 @@ const Standings = () => {//! Renderiza la pagina cuando se cambie el valor del l
           </article>)
         }
       
-    </div>
+    </section>
   )
 }
 

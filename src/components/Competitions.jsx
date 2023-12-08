@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import useFetch from "../../hooks/useFetch.js";
+import useFetch from "../hooks/useFetch.js";
 import CompetitionCard from './CompetitionsCard.jsx';
 import { useSelector } from 'react-redux';
 
