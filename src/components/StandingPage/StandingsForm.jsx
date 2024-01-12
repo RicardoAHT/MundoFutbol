@@ -13,7 +13,7 @@ const StandingsForm = () => { //! Capturo la info de la liga y la envio a la sto
 
   return (
     <form className="standingForm" onSubmit={handleSearch}>
-        <label className="standingForm__label" >Ingresa el codigo: </label>
+        <label className="Form__label" >Ingresa el codigo: </label>
         <input className="standingForm__input" type="text" ref={inputLeagueId} />
         <button className="standingForm__button">Go!</button>
     </form>

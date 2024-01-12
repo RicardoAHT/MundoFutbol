@@ -7,7 +7,7 @@ const CountrySelect = () => { //! Seleccionar el pais para obtener el countryId
 
     const apiKey = "49411caa941ba45b9364b4167077bfc65442a7216d3363c52ace8c8a7c267950"
     const countryUrl = `https://apiv3.apifootball.com/?action=get_countries&APIkey=${apiKey}`
-    const [countries, getCountries] = useFetch(countryUrl)
+    const [countries, getCountries, hasError] = useFetch(countryUrl)
     const dispatch = useDispatch()
 
     useEffect(() => {
@@ -17,11 +17,11 @@ const CountrySelect = () => { //! Seleccionar el pais para obtener el countryId
     const handleCountry = (event) => {
       dispatch(setCountrySlice(event.target.value))
     }
-    
+    //console.log(countries)
   return (
-    <form>
-        <label >Selecciona un pais: </label>
-        <select onChange={handleCountry}>
+    <form className='countrySelect'>
+        <label className='Form__label' >Selecciona un pais: </label>
+        <select className='countrySelect__select' onChange={handleCountry}>
           <option>---</option>
           {
             countries?.map(country => (
@@ -30,6 +30,7 @@ const CountrySelect = () => { //! Seleccionar el pais para obtener el countryId
               </option>
             ))
           }
+
         </select>
     </form>
   )
