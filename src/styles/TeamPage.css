@@ -1,0 +1,79 @@
+/*! TeamPage*/
+.teamPage{
+
+}
+.teamPage__filter{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: grey;
+    padding: 1rem 0.3rem;
+}
+/*! Team*/
+.team{
+
+}
+.team__article{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: start;
+}
+/*! TeamCard*/
+.teamCard{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 700px;
+    background: radial-gradient(circle at 30% 30%, #5542d6ab, #151543de);
+    border: solid 0.2rem;
+    margin: 1rem;
+    padding: 1rem;
+    overflow-y: hidden;
+}
+.teamCard__div{
+    display: flex;
+    gap: 1rem;
+}
+.teamCard__div__img{
+    width: 80px;
+    height: 80px;
+}
+.teamCard__div__div{
+
+}
+.teamCard__div__div__h3{
+    text-align: center;
+}
+.teamCard__div__div__ul{
+    list-style: none;
+}
+.teamCard__div__div__ul__li{
+
+}
+
+/*! TeamPlayers */
+.teamPlayers{
+
+}
+.teamPlayers__ul{
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+}
+.teamPlayers__ul__li{
+
+}
+.teamPlayers__ul__li__type{
+    width: 75px;
+}
+.teamPlayers__ul__li__number{
+    width: 17px;
+}
+.teamPlayers__ul__li__name{
+    width:140px;
+}
+@media (max-width: 540px){
+}

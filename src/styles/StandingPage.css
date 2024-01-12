@@ -1,0 +1,168 @@
+/*! StandingPage */
+.standingPage{
+    
+}
+/*! Standing */
+.standing{
+
+}
+.standing__h2{
+    text-align: center;
+    margin-top: 3rem ;
+}
+.standing__h3{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+/*! StandingForm */
+.standingForm{
+    
+}
+.standingForm__label{
+    
+}
+.standingForm__input{
+    width: 3rem;
+}
+.standingForm__button{
+    
+}
+/*? standingCardContainer*/
+.stadingsCard__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/*! StandingsCard*/
+.standingsCard{
+    background: linear-gradient(45deg, rgba(2, 2, 155, 0.992), rgba(144, 0, 255, 0.986));
+    border-radius: 0.3rem;
+    border: solid 0.15rem;
+    display: flex;
+    flex-direction: row ;
+    align-items: center;
+    justify-content: space-between;
+    width: 500px;
+    gap: 0.1rem;
+    padding: 0.2rem;
+    margin: 0.3rem 0.5rem;
+}
+.standingsCard__div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.2rem;
+    margin: 1rem 0.5rem 0.2rem 0.5rem;
+}
+.standingsCard__div__badge{
+    width: 35px;
+}
+.standingsCard__div__h4{
+    font-size: 15px;
+    color: ghostwhite;
+}
+.standingsCard__div2{
+
+}
+.standingsCard__div2__h5{
+    font-size: 14px;
+}
+.standingsCard__stats{
+    background-color: rgba(248, 248, 255, 0.81);
+    display: flex;
+    border: solid 0.01rem;
+    font-size: 15px;
+}
+.standingsCard__stats__li{
+    min-width: 35px;
+    border: solid 0.01rem;
+    padding: 0.1rem;
+    text-align: center;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+.standingsCard__stats__li__span{
+    border-bottom: solid 1px;
+    margin-bottom: 0.2rem;
+}
+@media (max-width:540px){
+    /*! StandingForm */
+    .Form__label{
+        font-size: 13px;
+    }
+    .standingForm__input{
+        width: 2.3rem;
+    }
+    /*! StandingsCard*/
+    .standingsCard{
+        width: 310px;
+        gap: 0.04rem;
+        padding: 0.04rem;
+        margin: 0.07rem 0.07rem;
+    }
+    .standingsCard__div{
+        flex-direction: column;
+        align-items: start;
+        gap: 0.04rem;
+        margin: 0.05rem 0.07rem 0.2rem 0.05rem;
+    }
+    .standingsCard__div__badge{
+        width: 35px;
+        margin-left: 0.7rem;
+    }
+    .standingsCard__div__h4{
+        font-size: 12px;
+    }
+    .standingsCard__div2__h5{
+        font-size: 9px;
+    }
+    .standingsCard__stats{
+        font-size: 12px;
+    }
+    .standingsCard__stats__li{
+        min-width: 17px;
+        padding: 0.15rem;
+    }
+}
+@media (max-width:320px){
+    /*! Standing */
+    .standing__h2{
+        margin-top: 3rem ;
+    }
+    .standing__h3{
+        margin-bottom: 2rem;
+    }
+    /*! StandingForm */
+    .standingForm__label{
+        font-size: 12px;
+        color: red;
+    }
+    /*! StandingsCard*/
+    .standingsCard{
+        width: 270px;
+        gap: 0.01rem;
+        padding: 0.01rem;
+        margin: 0.05rem 0.05rem;
+    }
+    .standingsCard__div{
+        gap: 0.01rem;
+        margin: 0.05rem 0.07rem 0.2rem 0.05rem;
+    }
+    .standingsCard__div__badge{
+        width: 30px;
+    }
+    .standingsCard__div__h4{
+        font-size: 10px;
+    }
+    .standingsCard__div2__h5{
+        font-size: 8px;
+    }
+    .standingsCard__stats{
+        font-size: 10px;
+    }
+    .standingsCard__stats__li{
+        min-width: 15px;
+        padding: 0.1rem;
+    }
+}
